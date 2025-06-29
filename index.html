@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Buenos diaaas</title>
+  <title>Buenos diaaas, Amorcito</title>
   <link rel="shortcut icon" href="/assets/dashhleenheart.webp" type="image/x-icon">
   <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
@@ -13,10 +13,26 @@
 <div class="estela-rectangulo" id="estela"></div>
 <div class="avion" id="avion"><img src="/assets/avion.png" alt=""></div>
 
-<div class="dashh" style="display: none;">
+<div class="dashh" style="display: none; text-align: center;">
   <h1 id="dashh-title"></h1>
   <p id="dashh-text" style="opacity: 0;"></p>
+  <button type="button" class="nes-btn is-error" id="show-video-button" style="margin-top: 20px; padding: 10px 20px; font-size: 16px; cursor: pointer; opacity: 0; width: 300px;">Yo cuando veo a mi preciosota:</button>
+  <div id="video-container" style="display: none; margin-top: 20px;">
+    <video id="teamo-video" controls style="max-width: 100%; height: auto;">
+      <source src="/assets/teamo.mp4" type="video/mp4">
+      Tu navegador es una caca
+    </video>
+  </div>
 </div>
+<script>
+  document.getElementById("show-video-button").addEventListener("click", function() {
+    // Ocultar el botón
+    this.style.display = "none";
+
+    // Mostrar el video
+    document.getElementById("video-container").style.display = "block";
+  });
+</script>
 
   <div class="card">
     <div id="dashhtext" class="typewriter"></div>
