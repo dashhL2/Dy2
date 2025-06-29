@@ -1,0 +1,140 @@
+body {
+  background: linear-gradient(135deg, #4F85F2 0%, #0077b6 100%); 
+  font-family: 'VT323', monospace;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.nao1 {
+  height: 100vh;
+  width: 100%;
+ display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  text-align: center;
+  background-color: #111;
+}
+.nao {
+  width: 400px
+}
+.text {
+  color: #fff;
+  font-size: 50px;
+}
+.s {
+  display: none;
+}
+
+.card {
+  background-image: url("/assets/nbb.png");
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #023e8a;
+  padding: 60px 40px;
+  width: 90%;
+  transition: transform 3s ease-in-out;
+  text-align: center;
+  min-width: 1000px;
+  min-height:550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.avion {
+  position: fixed;
+  top: 50%;
+  left: -100px;
+  transform: translateY(-50%);
+  font-size: 3em;
+  opacity: 0;
+  z-index: 11;
+  transition: transform 5s linear, opacity 0.5s ease-in;
+}
+
+.dashh {
+  width: 100%;
+  height: 100vh;
+  background-color: #FBD2C5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15; 
+  display: none;
+  padding: 40px;
+  box-sizing: border-box;
+  color: #993D33;
+  font-family: 'VT323', monospace;
+  overflow-y: auto;
+}
+
+#dashh-title {
+  font-size: 3em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;       
+  margin: 0 auto;           
+  width: fit-content;       
+  display: block;            
+}
+
+#dashh-text {
+  margin-top: 30px;
+  font-size: 1.5em;
+  line-height: 1.4;
+  transition: opacity 1.5s ease;
+}
+
+.estela-rectangulo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 0;
+  background-color: #FBD2C5;
+  z-index: 10;
+  transition: width 5s linear;
+}
+
+#dashhtext {
+  font-size: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+ 
+  display: inline-block;
+  animation: all 0.8s infinite;
+  margin-top: 80px;
+}
+
+.card.mover-derecha {
+ transform: translateX(120vw);
+}
+
+.pregunta {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+
+.botones button {
+  
+  font-size: 1.3em;
+  margin: 0 30px;
+  margin-top: 30px;
+  width: 200px;
+  height: px;
+  cursor: pointer;
+}
+
+#interaction {
+  opacity: 0;
+  transition: opacity 1s ease;
+  min-height: 120px;
+}
+
+#interaction.visible {
+  opacity: 1;
+}
